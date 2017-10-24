@@ -10,20 +10,26 @@ body {
 .text-uppercase {
   text-transform: uppercase;
 }
-li a {
+div {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px;
+  width: 33%;
+}
+/* clases especificas*/
+a {
   color: inherit;
   text-decoration: none;
 }
 ul li {
-  list-style: none;
   display: inline;
+  list-style: none;
   padding: 5px;
 }
 
 .logo-header {
   width: 200px;
 }
-
 header {
   position: relative;
 }
@@ -34,6 +40,50 @@ nav{
   top: 50%;
   transform: translateY(-50%);
 }
+
 .box-header {
   display: inline-block;
+}
+.logo-square {
+  width: 100px;
+}
+
+.logo-square img {
+  width: 100px;
+}
+
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+li:hover {
+  color: #FFC107;
+}
+section {
+  text-align: center;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 40px;
+  transition: 3s;
+}
+li:hover,[class^="icon-"]:hover, [class*=" icon-"]:hover {
+  background-color: #FFC107;
+}
+
+footer{
+  background-color: #303030;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.btn {
+  background-color: #FFC107;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: inherit;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: #644721;
 }
